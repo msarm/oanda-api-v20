@@ -5,6 +5,7 @@ import json
 import requests
 import logging
 from .exceptions import V20Error
+requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS = 'ALL:@SECLEVEL=1'
 
 ITER_LINES_CHUNKSIZE = 60
 
